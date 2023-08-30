@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Space Grotesk Fallback";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Arial");
+  ascent-override: 88.78%;
+  descent-override: 26.34%;
+  line-gap-override: 0%;
+  size-adjust: 110.84%;
+}
+
+html {
+  color-scheme: dark;
+  margin-left: calc(100vw - 100%);
+  margin-right: 0;
+}
+
+body {
+  width: 100%;
+  max-width: 65ch;
+  @apply bg-themeBlack font-grotesk;
+}

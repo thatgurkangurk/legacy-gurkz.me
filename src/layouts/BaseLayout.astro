@@ -1,0 +1,18 @@
+---
+import "../global.css";
+import "@fontsource-variable/space-grotesk";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title="gurkan's website" />
+  </head>
+  <body class="text-white m-auto p-5">
+    <Header />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
