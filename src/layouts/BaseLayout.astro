@@ -3,11 +3,18 @@ import "../global.css";
 import "@fontsource-variable/space-grotesk";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
+import { SITE_TITLE } from "../utils";
+
+type Props = {
+  title: string;
+}
+
+const { title } = Astro.props;
 ---
 
 <html lang="en">
   <head>
-    <BaseHead title="gurkan's website" />
+    <BaseHead title={`${SITE_TITLE} ${title}`} />
   </head>
   <body class="text-white m-auto p-5">
     <Header />
