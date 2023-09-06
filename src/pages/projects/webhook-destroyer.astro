@@ -1,0 +1,15 @@
+---
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+import { WebhookForm } from "../../components/projects/webhook-destroyer/Form.tsx";
+---
+
+<ProjectLayout title="webhook destroyer">
+    <h1 class="text-4xl" transition:name="webhook-destroyer-title">
+        webhook destroyer
+    </h1>
+    <p transition:name="webhook-destroyer-description">
+        use this tool to destroy discord webhooks
+    </p>
+
+    <WebhookForm client:load />
+</ProjectLayout>

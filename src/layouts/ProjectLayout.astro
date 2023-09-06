@@ -1,0 +1,21 @@
+---
+import Link from "../components/Link.astro";
+import BaseLayout from "./BaseLayout.astro";
+type Props = {
+    title: string;
+};
+
+const { title } = Astro.props;
+---
+
+<BaseLayout title={` projects - ${title}`}>
+    <header class="pb-2 text-center">
+        <div
+            transition:name="back-to-projects"
+            class="flex flex-row justify-center gap-2"
+        >
+            <Link href="/projects">go back</Link>
+        </div>
+    </header>
+    <slot />
+</BaseLayout>

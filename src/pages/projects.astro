@@ -1,0 +1,23 @@
+---
+import ProjectCard from "../components/ProjectCard.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="home">
+  <h1 class="text-4xl font-bold">projects</h1>
+  <p class="text-md">
+    here are some random projects that i've made
+    <br />
+     to be honest, most are pretty useless, but they were fun to make!
+    <br />
+     warning: 99% of these projects cannot work without javascript enabled
+  </p>
+
+  <div class="grid grid-cols-2 gap-4 pt-4">
+    <ProjectCard
+      title="webhook destroyer"
+      description="use this tool to destroy discord webhooks"
+      slug="webhook-destroyer"
+    />
+  </div>
+</BaseLayout>
