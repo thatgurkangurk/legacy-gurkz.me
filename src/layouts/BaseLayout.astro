@@ -2,8 +2,8 @@
 import "../global.css";
 import "@fontsource-variable/space-grotesk";
 import BaseHead from "../components/BaseHead.astro";
-import Header from "../components/Header.astro";
 import { SITE_TITLE } from "../config";
+import Navbar from "../components/Navbar.astro";
 
 type Props = {
   title: string;
@@ -17,7 +17,14 @@ const { title } = Astro.props;
     <BaseHead title={`${SITE_TITLE} ${title}`} />
   </head>
   <body class="text-white m-auto p-5">
-    <Header />
+    <h1 transition:persist class="text-2xl text-center">gurkan's website</h1>
+    <Navbar
+      links={[
+        { href: "/", title: "home" },
+        { href: "/smp", title: "smp" },
+        { href: "/projects", title: "projects" },
+      ]}
+    />
     <main>
       <slot />
     </main>

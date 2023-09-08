@@ -1,0 +1,29 @@
+---
+import Navbar, { type Link } from "../components/Navbar.astro";
+import BaseLayout from "./BaseLayout.astro";
+type Props = {
+  title: string;
+};
+
+const { title } = Astro.props;
+
+const links: Link[] = [
+  {
+    href: "/smp",
+    title: "home",
+  },
+  {
+    href: "/smp/rules",
+    title: "rules",
+  },
+  {
+    href: "/smp/special-players",
+    title: "special players",
+  },
+];
+---
+
+<BaseLayout title={`smp - ${title}`}>
+  <Navbar links={links} />
+  <slot />
+</BaseLayout>

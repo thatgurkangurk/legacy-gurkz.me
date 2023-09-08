@@ -1,0 +1,25 @@
+---
+import SMPLayout from "../../layouts/SMPLayout.astro";
+
+const rules: string[] = [
+    "we do not discriminate against others",
+    "this is a pg-13 server, so light swearing is allowed, but no threats",
+    "do not hack on the server",
+    "if you find an exploit, please let me know so that I can patch it",
+    "do not intentionally try to lag/crash the server",
+    'do not try to "backdoor" the server',
+    "do not send any personally identifiable information about other players without their explicit consent",
+    "use common sense, if you have to think about if something _is_ allowed, it probably isn't",
+];
+---
+
+<SMPLayout title="rules">
+    <h1 class="text-4xl font-bold">rules</h1>
+    <p class="text-md">
+        we're a pretty free server, but we have a few rules that everyone should
+        follow:
+    </p>
+    <ol type="1" class="list-decimal pl-5 pt-2">
+        {rules.map((rule) => <li>{rule}</li>)}
+    </ol>
+</SMPLayout>
