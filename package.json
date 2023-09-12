@@ -10,10 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/node": "^6.0.0",
     "@astrojs/sitemap": "^3.0.0",
     "@astrojs/solid-js": "^3.0.0",
     "@astrojs/tailwind": "^5.0.0",
+    "@astrojs/vercel": "^4.0.5",
     "@fontsource-variable/space-grotesk": "^5.0.8",
     "astro": "^3.0.0",
     "solid-js": "^1.4.3",
